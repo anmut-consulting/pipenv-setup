@@ -17,12 +17,12 @@ autopep8 = "~=1.4"
 pipfile = "~=0.0"
 black = {markers = "python_version>='3.6'",version = "==19.10b0"}
 colorama = "~=0.4"
-packaging = "~=19.1"
+packaging = "~=20.0"
 requirementslib = "~=1.5"
 vistir = "~=0.4"
 autopep8 = {markers = "python_version<'3.6'",version = "~=1.4"}
 six = "~=1.12"
-typing = "~=3.7"
+typing = {markers = "python_version<'3.7'", version = "~=3.7"}
 
 [scripts]
 # use this to sync this pipfile to setup.py, explained in CONTRIBUTING.md
