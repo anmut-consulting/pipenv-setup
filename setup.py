@@ -136,25 +136,24 @@ setup(
     # https://packaging.python.org/en/latest/requirements.html
     extras_require={
         "dev": [
-            "pytest~=5.2; python_version >= '3.6'",
-            "pytest-mypy~=0.3; python_version >= '3.5'",
-            "pytest-cov~=2.7",
+            "black~=22.6",
+            "pytest~=7.1",
+            "pytest-mypy~=0.8",
+            "pytest-cov~=3.0",
             "pytest-datadir~=1.3",
-            "pytest-xdist~=1.29",
-            "tox~=3.14",
+            "pytest-xdist~=2.0",
+            "tox~=3.24",
             "autopep8~=1.4",
         ]
     },
     install_requires=[
         "pipfile~=0.0",
-        "black~=22.6; python_version >= '3.6'",
         "colorama~=0.4",
-        "packaging~=20.0",
+        "packaging~=21.0",
         "requirementslib~=1.5",
+        "typing~=3.7",
         "vistir~=0.4",
-        "autopep8~=1.4; python_version < '3.6'",
         "six~=1.12",
-        "typing~=3.7; python_version < '3.7'",
     ],  # Optional
     entry_points={
         "console_scripts": ["pipenv-setup=pipenv_setup.main:cmd"]
