@@ -16,7 +16,12 @@ except ImportError:
 from six import string_types
 
 from colorama import Fore, init
-from vistir.compat import Path
+# from vistir.compat import Path
+# vistir has had compat module removed as functionality is available in Python default libs
+# See here for more info:
+# https://github.com/Madoshakalaka/pipenv-setup/issues/138#issuecomment-1277036161
+# https://github.com/sarugaku/vistir/issues/134#issuecomment-1276559727
+from pathlib import Path
 from pipenv_setup import (
     lockfile_parser,
     setup_filler,

@@ -4,7 +4,7 @@ from os.path import dirname
 from typing import Optional, List, Any
 
 import pytest
-from vistir.compat import Path
+from pathlib import Path
 
 from pipenv_setup import msg_formatter, main
 from pipenv_setup.main import cmd

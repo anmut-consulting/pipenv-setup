@@ -4,7 +4,7 @@ from tests.conftest import assert_kw_args_eq
 from pipenv_setup.main import cmd
 
 import pytest
-from vistir.compat import Path
+from pathlib import Path
 
 
 @pytest.mark.parametrize(

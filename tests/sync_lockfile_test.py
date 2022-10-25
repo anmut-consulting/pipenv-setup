@@ -1,5 +1,5 @@
 from typing import Any
-from vistir.compat import Path
+from pathlib import Path
 import pytest
 
 from pipenv_setup import msg_formatter

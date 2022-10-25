@@ -7,7 +7,7 @@ import shutil
 from distutils import dir_util
 from typing import Generator
 
-from vistir.compat import Path
+from pathlib import Path
 
 from pipenv_setup import setup_parser
 
