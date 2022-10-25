@@ -7,7 +7,7 @@ from subprocess import Popen, PIPE
 from tokenize import OP
 from typing import Tuple, List, Any
 
-from vistir.compat import Path
+from pathlib import Path
 
 from pipenv_setup import setup_parser
 from pipenv_setup.setup_parser import get_setup_call_node, get_kw_list_node

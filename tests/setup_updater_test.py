@@ -1,5 +1,5 @@
 from collections import defaultdict
-from vistir.compat import Path
+from pathlib import Path
 from .conftest import data
 from pipenv_setup import setup_updater
 

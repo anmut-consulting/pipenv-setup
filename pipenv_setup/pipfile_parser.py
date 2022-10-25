@@ -2,7 +2,7 @@ from typing import Tuple, Dict
 
 import pipfile
 from requirementslib import Requirement
-from vistir.compat import Path
+from pathlib import Path
 from six import string_types
 from pipenv_setup.constants import PipfileConfig, vcs_list
 
