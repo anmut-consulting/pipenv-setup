@@ -18,7 +18,7 @@ autopep8 = "~=1.4"
 pipfile = "~=0.0"
 colorama = "~=0.4"
 packaging = "~=21.0"
-requirementslib = "~=2.1"
+#requirementslib = "~=2.1"
 typing = {version = "~=3.7"}
 six = "~=1.12"
 
