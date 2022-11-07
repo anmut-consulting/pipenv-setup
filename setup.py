@@ -146,14 +146,14 @@ setup(
             "autopep8~=1.4",
         ]
     },
-    install_requires=[
-        "pipfile~=0.0",
-        "colorama~=0.4",
-        "packaging~=21.0",
-        "requirementslib~=2.1",
-        "typing~=3.7",
-        "six~=1.12",
-    ],  # Optional
+    install_requires=['pipfile~=0.0', 'colorama~=0.4', 'packaging~=21.0', 'requirementslib~=2.1', 'typing~=3.7', 'six~=1.12'
+
+
+
+
+
+
+],  # Optional
     entry_points={
         "console_scripts": ["pipenv-setup=pipenv_setup.main:cmd"]
     },  # Optional
