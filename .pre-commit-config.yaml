@@ -1,0 +1,18 @@
+# See https://pre-commit.com/ for usage and config
+repos:
+- repo: https://github.com/anmut-consulting/pipenv-setup
+  rev: requirementslib_update
+  hooks:
+  - id: pipenv-setup-sync
+    name: "pipenv-setup sync with pipfile"
+    stages: [push]
+    language: system
+    entry: pipenv run pipenv-setup sync --pipfile
+    pass_filenames: false
+
+  - id: pipenv-setup-check
+    name: "pipenv-setup check"
+    stages: [push]
+    language: system
+    entry: pipenv run pipenv-setup check
+    pass_filenames: false
