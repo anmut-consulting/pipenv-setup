@@ -42,7 +42,7 @@ setup(
     # For a discussion on single-sourcing the version across setup.py and the
     # project code, see
     # https://packaging.python.org/en/latest/single_source_version.html
-    version="3.1.1",  # Required
+    version="3.1.5",  # Required
     # This is a one-line description or tagline of what your project does. This
     # corresponds to the "Summary" metadata field:
     # https://packaging.python.org/specifications/core-metadata/#summary
@@ -71,13 +71,13 @@ setup(
     #
     # This field corresponds to the "Home-Page" metadata field:
     # https://packaging.python.org/specifications/core-metadata/#home-page-optional
-    url="https://github.com/Madoshakalaka/pipenv-setup",  # Optional
+    url="https://github.com/anmut-consulting/pipenv-setup",  # Optional
     # This should be your name or the name of the organization which owns the
     # project.
-    author="Matt Yan",  # Optional
+    author="Anmut",  # Optional
     # This should be a valid email address corresponding to the author listed
     # above.
-    author_email="syan4@ualberta.ca",  # Optional
+    author_email="systems@anmut.co.uk",  # Optional
     # Classifiers help users find your project by categorizing it.
     #
     # For a list of valid classifiers, see https://pypi.org/classifiers/
@@ -162,8 +162,7 @@ setup(
     # This field corresponds to the "Project-URL" metadata fields:
     # https://packaging.python.org/specifications/core-metadata/#project-url-multiple-use
     project_urls={  # Optional
-        "Bug Reports": "https://github.com/Madoshakalaka/pipenv-setup/issues",
-        "Say Thanks!": "https://github.com/Madoshakalaka/pipenv-setup",
-        "Source": "https://github.com/Madoshakalaka/pipenv-setup",
+        # "Bug Reports": "https://github.com/anmut-consulting/pipenv-setup/issues",
+        "Source": "https://github.com/anmut-consulting/pipenv-setup",
     },
 )
