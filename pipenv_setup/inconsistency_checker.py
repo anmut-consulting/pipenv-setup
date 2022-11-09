@@ -239,7 +239,14 @@ class InconsistencyChecker:
         met_comp_ops = False
 
         for c in package_string:
-            if c in ("=", "<", ">", "!"):
+            # Discovered 09/11/2022 that pipfile sync checks will fail if tilde
+            # is not properly handled when checking pipfile syncing and 'at
+            # least' notation is used (pipfile~=0.1 as opposed to pipfile==0.1).
+            # This means that name and version_reqs_string are returned
+            # incorrectly e.g.
+            # name = 'pipfile~', version_reqs_string =  '=0.0'     instead of
+            # name = 'pipfile',  version_reqs_string = '~=0.0'
+            if c in ("=", "<", ">", "!", "~"):
                 met_comp_ops = True
             elif c == ";":  # met other markers, which we ignore
                 break
