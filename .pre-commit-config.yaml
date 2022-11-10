@@ -1,13 +1,13 @@
 # See https://pre-commit.com/ for usage and config
 repos:
-- repo: https://github.com/anmut-consulting/pipenv-setup
-  rev: requirementslib_update
+- repo: local
   hooks:
   - id: pipenv-setup-sync
     name: "pipenv-setup sync with pipfile"
     stages: [push]
     language: system
-    entry: pipenv run pipenv-setup sync --pipfile
+    types: [python]
+    entry: python -m pipenv_setup sync --pipfile
     pass_filenames: false
     always_run: true
 
@@ -15,6 +15,7 @@ repos:
     name: "pipenv-setup check"
     stages: [push]
     language: system
-    entry: pipenv run pipenv-setup check
+    types: [python]
+    entry: python -m pipenv_setup check
     pass_filenames: false
     always_run: true
