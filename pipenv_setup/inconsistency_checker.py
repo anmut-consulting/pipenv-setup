@@ -232,6 +232,12 @@ class InconsistencyChecker:
         ('numpy', '==1.2.3,>1.2,<2')
         >>> InconsistencyChecker._separate_name_version("numpy")
         ('numpy', '')
+        >>> InconsistencyChecker._separate_name_version("numpy~=1.2.3")
+        ('numpy', '~=1.2.3')
+        >>> InconsistencyChecker._separate_name_version("numpy~=1.2.3, >1.2,<2")
+        ('numpy', '~=1.2.3,>1.2,<2')
+        >>> InconsistencyChecker._separate_name_version("numpy~=1.2.3, >1.2,<2; os_name='nt'")
+        ('numpy', '~=1.2.3,>1.2,<2')
         """
         name = ""
         version_reqs_string = ""
