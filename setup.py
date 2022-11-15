@@ -163,7 +163,7 @@ setup(
     # This field corresponds to the "Project-URL" metadata fields:
     # https://packaging.python.org/specifications/core-metadata/#project-url-multiple-use
     project_urls={  # Optional
-        # "Bug Reports": "https://github.com/anmut-consulting/pipenv-setup/issues",
+        "Bug Reports": "https://github.com/anmut-consulting/pipenv-setup/issues",
         "Source": "https://github.com/anmut-consulting/pipenv-setup",
     },
 )
