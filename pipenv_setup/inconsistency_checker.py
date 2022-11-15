@@ -232,6 +232,12 @@ class InconsistencyChecker:
         ('numpy', '==1.2.3,>1.2,<2')
         >>> InconsistencyChecker._separate_name_version("numpy")
         ('numpy', '')
+        >>> InconsistencyChecker._separate_name_version("numpy~=1.2.3")
+        ('numpy', '~=1.2.3')
+        >>> InconsistencyChecker._separate_name_version("numpy~=1.2.3, >1.2,<2")
+        ('numpy', '~=1.2.3,>1.2,<2')
+        >>> InconsistencyChecker._separate_name_version("numpy~=1.2.3, >1.2,<2; os_name='nt'")
+        ('numpy', '~=1.2.3,>1.2,<2')
         """
         name = ""
         version_reqs_string = ""
@@ -239,7 +245,7 @@ class InconsistencyChecker:
         met_comp_ops = False
 
         for c in package_string:
-            if c in ("=", "<", ">", "!"):
+            if c in ("=", "<", ">", "!", "~"):
                 met_comp_ops = True
             elif c == ";":  # met other markers, which we ignore
                 break

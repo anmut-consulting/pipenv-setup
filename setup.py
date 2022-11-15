@@ -42,7 +42,7 @@ setup(
     # For a discussion on single-sourcing the version across setup.py and the
     # project code, see
     # https://packaging.python.org/en/latest/single_source_version.html
-    version="3.1.1",  # Required
+    version="3.1.5",  # Required
     # This is a one-line description or tagline of what your project does. This
     # corresponds to the "Summary" metadata field:
     # https://packaging.python.org/specifications/core-metadata/#summary
@@ -71,13 +71,13 @@ setup(
     #
     # This field corresponds to the "Home-Page" metadata field:
     # https://packaging.python.org/specifications/core-metadata/#home-page-optional
-    url="https://github.com/Madoshakalaka/pipenv-setup",  # Optional
+    url="https://github.com/anmut-consulting/pipenv-setup",  # Optional
     # This should be your name or the name of the organization which owns the
     # project.
-    author="Matt Yan",  # Optional
+    author="Anmut",  # Optional
     # This should be a valid email address corresponding to the author listed
     # above.
-    author_email="syan4@ualberta.ca",  # Optional
+    author_email="systems@anmut.co.uk",  # Optional
     # Classifiers help users find your project by categorizing it.
     #
     # For a list of valid classifiers, see https://pypi.org/classifiers/
@@ -103,6 +103,7 @@ setup(
         "Programming Language :: Python :: 3.7",
         "Programming Language :: Python :: 3.8",
     ],
+    dependency_links=[],
     # This field adds keywords for your project which will appear on the
     # project page. What does your project relate to?
     #
@@ -136,24 +137,23 @@ setup(
     # https://packaging.python.org/en/latest/requirements.html
     extras_require={
         "dev": [
-            "black~=22.6",
             "pytest~=7.1",
             "pytest-mypy~=0.8",
             "pytest-cov~=3.0",
             "pytest-datadir~=1.3",
             "pytest-xdist~=2.0",
             "tox~=3.24",
-            "autopep8~=1.4",
         ]
     },
     install_requires=[
         "pipfile~=0.0",
         "colorama~=0.4",
         "packaging~=21.0",
-        "requirementslib~=1.5",
+        "requirementslib~=2.1",
         "typing~=3.7",
-        "vistir~=0.4",
         "six~=1.12",
+        "black~=22.6",
+        "autopep8~=1.4",
     ],  # Optional
     entry_points={
         "console_scripts": ["pipenv-setup=pipenv_setup.main:cmd"]
@@ -163,8 +163,7 @@ setup(
     # This field corresponds to the "Project-URL" metadata fields:
     # https://packaging.python.org/specifications/core-metadata/#project-url-multiple-use
     project_urls={  # Optional
-        "Bug Reports": "https://github.com/Madoshakalaka/pipenv-setup/issues",
-        "Say Thanks!": "https://github.com/Madoshakalaka/pipenv-setup",
-        "Source": "https://github.com/Madoshakalaka/pipenv-setup",
+        "Bug Reports": "https://github.com/anmut-consulting/pipenv-setup/issues",
+        "Source": "https://github.com/anmut-consulting/pipenv-setup",
     },
 )
