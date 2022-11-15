@@ -176,8 +176,10 @@ def check(args):
         setup_code = setup_file.read()
     try:
         (
+            #TODO: return the extras_require nodes from setup.py, and update below to check with pipfile using inconsistency checker
             install_requires,
             dependency_links,
+            # extras_require,
         ) = setup_parser.get_install_requires_dependency_links(setup_code)
     except (ValueError, SyntaxError) as e:
         fatal_error(str(e))
@@ -194,6 +196,8 @@ def check(args):
         checker.check_dependency_links_conflict,
         checker.check_lacking_install_requires,
         checker.check_lacking_dependency_links,
+        #checker.check_extras_require_conflict
+        #checker.check_lacking_extras_require
     )
     for check_item in checks:
         try:

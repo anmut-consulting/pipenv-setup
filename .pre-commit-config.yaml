@@ -6,7 +6,8 @@ repos:
     name: "pipenv-setup sync with pipfile"
     stages: [push]
     language: system
-    entry: python -m pipenv_setup sync --pipfile
+    # --dev added to sync dev packages in pipfile with extras_require in setup.py
+    entry: python -m pipenv_setup sync --pipfile --dev
     pass_filenames: false
     always_run: true
 

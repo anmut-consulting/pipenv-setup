@@ -137,14 +137,12 @@ setup(
     # https://packaging.python.org/en/latest/requirements.html
     extras_require={
         "dev": [
-            "black~=22.6",
             "pytest~=7.1",
             "pytest-mypy~=0.8",
             "pytest-cov~=3.0",
             "pytest-datadir~=1.3",
             "pytest-xdist~=2.0",
             "tox~=3.24",
-            "autopep8~=1.4",
         ]
     },
     install_requires=[
@@ -154,6 +152,8 @@ setup(
         "requirementslib~=2.1",
         "typing~=3.7",
         "six~=1.12",
+        "black~=22.6",
+        "autopep8~=1.4",
     ],  # Optional
     entry_points={
         "console_scripts": ["pipenv-setup=pipenv_setup.main:cmd"]
