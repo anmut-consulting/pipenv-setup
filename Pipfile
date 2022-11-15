@@ -21,10 +21,8 @@ six = "~=1.12"
 black = {version = "~=22.6" }
 autopep8 = "~=1.4"
 
-
 [scripts]
 # use this to sync this pipfile to setup.py, explained in CONTRIBUTING.md
 # `$ pipenv run sync-deps`
 sync-deps = 'python -m pipenv_setup sync --dev --pipfile'
 push_test = "pipenv run pre-commit run --hook-stage push"
-
