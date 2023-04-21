@@ -80,7 +80,7 @@ def format_remote_package(
                 + " @ "
                 + Requirement.from_pipfile(package_name, config).as_line(
                     include_hashes=False
-                ).strip("-e "),
+                ).replace("-e ", ""),
             )
 
 
