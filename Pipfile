@@ -16,11 +16,11 @@ autopep8 = "~=1.4"
 black = {version = "~=22.6" }
 colorama = "~=0.4"
 packaging = "~=21.0"
+pip = "==24.0"
 pipfile = "~=0.0"
 requirementslib = "~=2.1"
 six = "~=1.12"
 typing = {version = "~=3.7"}
-pip = "==24.0"
 
 [scripts]
 # use this to sync this pipfile to setup.py, explained in CONTRIBUTING.md
