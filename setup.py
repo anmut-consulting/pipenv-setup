@@ -150,11 +150,11 @@ setup(
         "black~=22.6",
         "colorama~=0.4",
         "packaging~=21.0",
+        "pip==24.0",
         "pipfile~=0.0",
         "requirementslib~=2.1",
         "six~=1.12",
         "typing~=3.7",
-        "pip==24.0",
     ],  # Optional
     entry_points={
         "console_scripts": ["pipenv-setup=pipenv_setup.main:cmd"]
