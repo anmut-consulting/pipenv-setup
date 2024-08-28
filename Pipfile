@@ -12,14 +12,15 @@ pytest-xdist = "~=2.0"
 tox = "~=3.24"
 
 [packages]
-pipfile = "~=0.0"
+autopep8 = "~=1.4"
+black = {version = "~=22.6" }
 colorama = "~=0.4"
 packaging = "~=21.0"
+pip = "==24.0"
+pipfile = "~=0.0"
 requirementslib = "~=2.1"
-typing = {version = "~=3.7"}
 six = "~=1.12"
-black = {version = "~=22.6" }
-autopep8 = "~=1.4"
+typing = {version = "~=3.7"}
 
 [scripts]
 # use this to sync this pipfile to setup.py, explained in CONTRIBUTING.md
